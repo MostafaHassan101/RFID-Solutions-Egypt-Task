@@ -1,15 +1,15 @@
 ﻿using System.Reflection;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Domain.Entities;
-using RFID_Task.Infrastructure.Identity;
-using RFID_Task.Infrastructure.Persistence.Interceptors;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Domain.Entities;
+using RFID.SimpleTask.Infrastructure.Identity;
+using RFID.SimpleTask.Infrastructure.Persistence.Interceptors;
 using Duende.IdentityServer.EntityFramework.Options;
 using MediatR;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
-namespace RFID_Task.Infrastructure.Persistence;
+namespace RFID.SimpleTask.Infrastructure.Persistence;
 
 public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, IApplicationDbContext
 {
@@ -31,9 +31,16 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
 
     public DbSet<TodoItem> TodoItems => Set<TodoItem>();
 
+    public DbSet<Order> Orders => Set<Order>();
+
+    public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+        builder.Ignore<TodoList>();
+        builder.Ignore<OrderItem>();
 
         base.OnModelCreating(builder);
     }

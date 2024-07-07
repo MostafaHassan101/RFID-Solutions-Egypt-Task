@@ -1,10 +1,10 @@
-﻿using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Domain.Common;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace RFID_Task.Infrastructure.Persistence.Interceptors;
+namespace RFID.SimpleTask.Infrastructure.Persistence.Interceptors;
 
 public class AuditableEntitySaveChangesInterceptor : SaveChangesInterceptor
 {

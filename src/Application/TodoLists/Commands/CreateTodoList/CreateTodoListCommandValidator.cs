@@ -1,8 +1,8 @@
-﻿using RFID_Task.Application.Common.Interfaces;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
-namespace RFID_Task.Application.TodoLists.Commands.CreateTodoList;
+namespace RFID.SimpleTask.Application.TodoLists.Commands.CreateTodoList;
 
 public class CreateTodoListCommandValidator : AbstractValidator<CreateTodoListCommand>
 {

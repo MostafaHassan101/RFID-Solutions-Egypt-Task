@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Application.TodoLists.Queries.GetTodos;
+﻿namespace RFID.SimpleTask.Application.TodoLists.Queries.GetTodos;
 
 public class TodosVm
 {

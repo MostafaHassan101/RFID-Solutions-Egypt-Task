@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
-using RFID_Task.Application.Common.Exceptions;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Application.Common.Security;
+using RFID.SimpleTask.Application.Common.Exceptions;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.Common.Security;
 using MediatR;
 
-namespace RFID_Task.Application.Common.Behaviours;
+namespace RFID.SimpleTask.Application.Common.Behaviours;
 
 public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
 {

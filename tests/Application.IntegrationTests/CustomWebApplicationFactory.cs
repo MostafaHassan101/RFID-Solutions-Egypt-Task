@@ -1,5 +1,5 @@
-﻿using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Infrastructure.Persistence;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Moq;
 
-namespace RFID_Task.Application.IntegrationTests;
+namespace RFID.SimpleTask.Application.IntegrationTests;
 
 using static Testing;
 

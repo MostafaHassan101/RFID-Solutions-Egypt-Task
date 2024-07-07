@@ -1,9 +1,9 @@
-﻿using RFID_Task.Application.Common.Exceptions;
+﻿using RFID.SimpleTask.Application.Common.Exceptions;
 using FluentAssertions;
 using FluentValidation.Results;
 using NUnit.Framework;
 
-namespace RFID_Task.Application.UnitTests.Common.Exceptions;
+namespace RFID.SimpleTask.Application.UnitTests.Common.Exceptions;
 
 public class ValidationExceptionTests
 {

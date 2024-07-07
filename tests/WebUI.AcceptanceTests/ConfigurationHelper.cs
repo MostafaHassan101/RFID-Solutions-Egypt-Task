@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace RFID_Task.WebUI.AcceptanceTests;
+namespace RFID.SimpleTask.WebUI.AcceptanceTests;
 
 public static class ConfigurationHelper
 {

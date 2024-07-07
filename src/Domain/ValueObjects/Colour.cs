@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Domain.ValueObjects;
+﻿namespace RFID.SimpleTask.Domain.ValueObjects;
 
 public class Colour : ValueObject
 {

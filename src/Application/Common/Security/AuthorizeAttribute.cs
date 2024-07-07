@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Application.Common.Security;
+﻿namespace RFID.SimpleTask.Application.Common.Security;
 
 /// <summary>
 /// Specifies the class this attribute is applied to requires authorization.

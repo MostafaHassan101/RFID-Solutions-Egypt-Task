@@ -1,8 +1,8 @@
-﻿using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Application.Common.Security;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.Common.Security;
 using MediatR;
 
-namespace RFID_Task.Application.TodoLists.Commands.PurgeTodoLists;
+namespace RFID.SimpleTask.Application.TodoLists.Commands.PurgeTodoLists;
 
 [Authorize(Roles = "Administrator")]
 [Authorize(Policy = "CanPurge")]

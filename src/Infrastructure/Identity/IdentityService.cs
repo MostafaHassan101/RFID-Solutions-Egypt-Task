@@ -1,25 +1,28 @@
-﻿using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Application.Common.Models;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.Common.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace RFID_Task.Infrastructure.Identity;
+namespace RFID.SimpleTask.Infrastructure.Identity;
 
 public class IdentityService : IIdentityService
 {
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly IUserClaimsPrincipalFactory<ApplicationUser> _userClaimsPrincipalFactory;
     private readonly IAuthorizationService _authorizationService;
+    private readonly SignInManager<ApplicationUser> _signInManager;
 
     public IdentityService(
         UserManager<ApplicationUser> userManager,
         IUserClaimsPrincipalFactory<ApplicationUser> userClaimsPrincipalFactory,
-        IAuthorizationService authorizationService)
+        IAuthorizationService authorizationService,
+        SignInManager<ApplicationUser> signInManager)
     {
         _userManager = userManager;
         _userClaimsPrincipalFactory = userClaimsPrincipalFactory;
         _authorizationService = authorizationService;
+        _signInManager = signInManager;
     }
 
     public async Task<string?> GetUserNameAsync(string userId)
@@ -77,5 +80,17 @@ public class IdentityService : IIdentityService
         var result = await _userManager.DeleteAsync(user);
 
         return result.ToApplicationResult();
+    }
+
+    public async Task SignOutAsync()
+    {
+        await _signInManager.SignOutAsync();
+    }
+
+    public async Task<Result> SignInAsync(string email, string password, bool rememberMe = false)
+    {
+        var sign = await _signInManager.PasswordSignInAsync(email, password, rememberMe, false);
+
+        return sign.Succeeded ? Result.Success() : Result.Failure(new List<string> { "Invalid login attempt." });
     }
 }

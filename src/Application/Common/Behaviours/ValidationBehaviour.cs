@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
 using MediatR;
-using ValidationException = RFID_Task.Application.Common.Exceptions.ValidationException;
+using ValidationException = RFID.SimpleTask.Application.Common.Exceptions.ValidationException;
 
-namespace RFID_Task.Application.Common.Behaviours;
+namespace RFID.SimpleTask.Application.Common.Behaviours;
 
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
      where TRequest : notnull

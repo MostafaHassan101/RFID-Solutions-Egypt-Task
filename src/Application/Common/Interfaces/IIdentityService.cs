@@ -1,6 +1,6 @@
-﻿using RFID_Task.Application.Common.Models;
+﻿using RFID.SimpleTask.Application.Common.Models;
 
-namespace RFID_Task.Application.Common.Interfaces;
+namespace RFID.SimpleTask.Application.Common.Interfaces;
 
 public interface IIdentityService
 {
@@ -13,4 +13,8 @@ public interface IIdentityService
     Task<(Result Result, string UserId)> CreateUserAsync(string userName, string password);
 
     Task<Result> DeleteUserAsync(string userId);
+    Task<Result> SignInAsync(string email, string password, bool rememberMe = false);
+
+    Task SignOutAsync();
+
 }

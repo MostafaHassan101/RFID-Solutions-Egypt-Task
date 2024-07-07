@@ -1,10 +1,10 @@
-﻿using RFID_Task.Application.Common.Exceptions;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Domain.Entities;
-using RFID_Task.Domain.Enums;
+﻿using RFID.SimpleTask.Application.Common.Exceptions;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Domain.Entities;
+using RFID.SimpleTask.Domain.Enums;
 using MediatR;
 
-namespace RFID_Task.Application.TodoItems.Commands.UpdateTodoItemDetail;
+namespace RFID.SimpleTask.Application.TodoItems.Commands.UpdateTodoItemDetail;
 
 public record UpdateTodoItemDetailCommand : IRequest
 {

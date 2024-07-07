@@ -1,6 +1,6 @@
-﻿using RFID_Task.Application.Common.Interfaces;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
 
-namespace RFID_Task.Infrastructure.Services;
+namespace RFID.SimpleTask.Infrastructure.Services;
 
 public class DateTimeService : IDateTime
 {

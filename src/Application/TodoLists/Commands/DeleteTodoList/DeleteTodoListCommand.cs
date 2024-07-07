@@ -1,10 +1,10 @@
-﻿using RFID_Task.Application.Common.Exceptions;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Domain.Entities;
+﻿using RFID.SimpleTask.Application.Common.Exceptions;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace RFID_Task.Application.TodoLists.Commands.DeleteTodoList;
+namespace RFID.SimpleTask.Application.TodoLists.Commands.DeleteTodoList;
 
 public record DeleteTodoListCommand(int Id) : IRequest;
 

@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Application.Common.Interfaces;
+﻿namespace RFID.SimpleTask.Application.Common.Interfaces;
 
 public interface IDateTime
 {

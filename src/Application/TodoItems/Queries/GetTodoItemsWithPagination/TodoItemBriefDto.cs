@@ -1,7 +1,7 @@
-﻿using RFID_Task.Application.Common.Mappings;
-using RFID_Task.Domain.Entities;
+﻿using RFID.SimpleTask.Application.Common.Mappings;
+using RFID.SimpleTask.Domain.Entities;
 
-namespace RFID_Task.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+namespace RFID.SimpleTask.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 
 public class TodoItemBriefDto : IMapFrom<TodoItem>
 {

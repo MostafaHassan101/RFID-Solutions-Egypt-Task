@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Application.TodoLists.Queries.ExportTodos;
+﻿namespace RFID.SimpleTask.Application.TodoLists.Queries.ExportTodos;
 
 public class ExportTodosVm
 {

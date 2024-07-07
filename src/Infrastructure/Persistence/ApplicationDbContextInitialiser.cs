@@ -1,10 +1,10 @@
-﻿using RFID_Task.Domain.Entities;
-using RFID_Task.Infrastructure.Identity;
+﻿using RFID.SimpleTask.Domain.Entities;
+using RFID.SimpleTask.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace RFID_Task.Infrastructure.Persistence;
+namespace RFID.SimpleTask.Infrastructure.Persistence;
 
 public class ApplicationDbContextInitialiser
 {
@@ -53,26 +53,27 @@ public class ApplicationDbContextInitialiser
     public async Task TrySeedAsync()
     {
         // Default roles
-        var administratorRole = new IdentityRole("Administrator");
+        //var administratorRole = new IdentityRole("Administrator");
 
-        if (_roleManager.Roles.All(r => r.Name != administratorRole.Name))
-        {
-            await _roleManager.CreateAsync(administratorRole);
-        }
+        //if (_roleManager.Roles.All(r => r.Name != administratorRole.Name))
+        //{
+        //    await _roleManager.CreateAsync(administratorRole);
+        //}
 
-        // Default users
-        var administrator = new ApplicationUser { UserName = "administrator@localhost", Email = "administrator@localhost" };
+        //// Default users
+        //var administrator = new ApplicationUser { UserName = "administrator@localhost", Email = "administrator@localhost" };
 
-        if (_userManager.Users.All(u => u.UserName != administrator.UserName))
-        {
-            await _userManager.CreateAsync(administrator, "Administrator1!");
-            if (!string.IsNullOrWhiteSpace(administratorRole.Name))
-            {
-                await _userManager.AddToRolesAsync(administrator, new [] { administratorRole.Name });
-            }
-        }
+        //if (_userManager.Users.All(u => u.UserName != administrator.UserName))
+        //{
+        //    await _userManager.CreateAsync(administrator, "Administrator1!");
+        //    if (!string.IsNullOrWhiteSpace(administratorRole.Name))
+        //    {
+        //        await _userManager.AddToRolesAsync(administrator, new [] { administratorRole.Name });
+        //    }
+        //}
+        await IdentityDataInitializer.InitializeIdentityDataAsync(_userManager, _roleManager);
 
-        // Default data
+        // Default datas
         // Seed, if necessary
         if (!_context.TodoLists.Any())
         {

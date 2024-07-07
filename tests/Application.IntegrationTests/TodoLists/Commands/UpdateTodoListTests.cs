@@ -1,11 +1,11 @@
-﻿using RFID_Task.Application.Common.Exceptions;
-using RFID_Task.Application.TodoLists.Commands.CreateTodoList;
-using RFID_Task.Application.TodoLists.Commands.UpdateTodoList;
-using RFID_Task.Domain.Entities;
+﻿using RFID.SimpleTask.Application.Common.Exceptions;
+using RFID.SimpleTask.Application.TodoLists.Commands.CreateTodoList;
+using RFID.SimpleTask.Application.TodoLists.Commands.UpdateTodoList;
+using RFID.SimpleTask.Domain.Entities;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace RFID_Task.Application.IntegrationTests.TodoLists.Commands;
+namespace RFID.SimpleTask.Application.IntegrationTests.TodoLists.Commands;
 
 using static Testing;
 

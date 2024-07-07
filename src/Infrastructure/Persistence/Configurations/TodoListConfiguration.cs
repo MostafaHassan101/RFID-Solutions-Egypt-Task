@@ -1,8 +1,8 @@
-﻿using RFID_Task.Domain.Entities;
+﻿using RFID.SimpleTask.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace RFID_Task.Infrastructure.Persistence.Configurations;
+namespace RFID.SimpleTask.Infrastructure.Persistence.Configurations;
 
 public class TodoListConfiguration : IEntityTypeConfiguration<TodoList>
 {

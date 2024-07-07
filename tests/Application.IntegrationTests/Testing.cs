@@ -1,5 +1,5 @@
-﻿using RFID_Task.Infrastructure.Identity;
-using RFID_Task.Infrastructure.Persistence;
+﻿using RFID.SimpleTask.Infrastructure.Identity;
+using RFID.SimpleTask.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NUnit.Framework;
 using Respawn;
 
-namespace RFID_Task.Application.IntegrationTests;
+namespace RFID.SimpleTask.Application.IntegrationTests;
 
 [SetUpFixture]
 public partial class Testing

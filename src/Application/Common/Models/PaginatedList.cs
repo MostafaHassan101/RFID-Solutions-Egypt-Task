@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace RFID_Task.Application.Common.Models;
+namespace RFID.SimpleTask.Application.Common.Models;
 
 public class PaginatedList<T>
 {

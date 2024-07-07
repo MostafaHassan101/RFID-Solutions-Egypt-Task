@@ -1,10 +1,10 @@
-﻿using RFID_Task.Application.Common.Exceptions;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Domain.Entities;
-using RFID_Task.Domain.Events;
+﻿using RFID.SimpleTask.Application.Common.Exceptions;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Domain.Entities;
+using RFID.SimpleTask.Domain.Events;
 using MediatR;
 
-namespace RFID_Task.Application.TodoItems.Commands.DeleteTodoItem;
+namespace RFID.SimpleTask.Application.TodoItems.Commands.DeleteTodoItem;
 
 public record DeleteTodoItemCommand(int Id) : IRequest;
 

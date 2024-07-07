@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.WebUI.AcceptanceTests.Pages;
+﻿namespace RFID.SimpleTask.WebUI.AcceptanceTests.Pages;
 
 public class LoginPage : BasePage
 {

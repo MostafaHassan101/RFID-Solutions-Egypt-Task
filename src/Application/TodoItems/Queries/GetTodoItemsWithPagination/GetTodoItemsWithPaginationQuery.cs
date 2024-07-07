@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Application.Common.Mappings;
-using RFID_Task.Application.Common.Models;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.Common.Mappings;
+using RFID.SimpleTask.Application.Common.Models;
 using MediatR;
 
-namespace RFID_Task.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+namespace RFID.SimpleTask.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 
 public record GetTodoItemsWithPaginationQuery : IRequest<PaginatedList<TodoItemBriefDto>>
 {

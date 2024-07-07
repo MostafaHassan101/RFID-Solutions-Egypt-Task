@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Application.Common.Exceptions;
+﻿namespace RFID.SimpleTask.Application.Common.Exceptions;
 
 public class NotFoundException : Exception
 {

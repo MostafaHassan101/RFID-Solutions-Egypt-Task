@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Domain.Enums;
+﻿namespace RFID.SimpleTask.Domain.Enums;
 
 public enum PriorityLevel
 {

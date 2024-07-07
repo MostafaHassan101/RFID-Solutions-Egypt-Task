@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>RFID_Task.Application.UnitTests</RootNamespace>
-        <AssemblyName>RFID_Task.Application.UnitTests</AssemblyName>
+        <RootNamespace>RFID.SimpleTask.Application.UnitTests</RootNamespace>
+        <AssemblyName>RFID.SimpleTask.Application.UnitTests</AssemblyName>
 
         <IsPackable>false</IsPackable>
         <ImplicitUsings>enable</ImplicitUsings>

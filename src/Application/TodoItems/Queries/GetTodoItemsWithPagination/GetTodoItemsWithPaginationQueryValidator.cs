@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace RFID_Task.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+namespace RFID.SimpleTask.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 
 public class GetTodoItemsWithPaginationQueryValidator : AbstractValidator<GetTodoItemsWithPaginationQuery>
 {

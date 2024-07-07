@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace RFID_Task.Application.IntegrationTests;
+namespace RFID.SimpleTask.Application.IntegrationTests;
 
 using static Testing;
 

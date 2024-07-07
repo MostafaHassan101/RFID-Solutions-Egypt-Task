@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace RFID_Task.Application.TodoItems.Commands.UpdateTodoItem;
+namespace RFID.SimpleTask.Application.TodoItems.Commands.UpdateTodoItem;
 
 public class UpdateTodoItemCommandValidator : AbstractValidator<UpdateTodoItemCommand>
 {

@@ -1,4 +1,4 @@
-namespace RFID_Task.WebUI.AcceptanceTests.StepDefinitions;
+namespace RFID.SimpleTask.WebUI.AcceptanceTests.StepDefinitions;
 
 [Binding]
 public sealed class LoginStepDefinitions

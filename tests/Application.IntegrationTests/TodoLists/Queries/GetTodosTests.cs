@@ -1,10 +1,10 @@
-﻿using RFID_Task.Application.TodoLists.Queries.GetTodos;
-using RFID_Task.Domain.Entities;
-using RFID_Task.Domain.ValueObjects;
+﻿using RFID.SimpleTask.Application.TodoLists.Queries.GetTodos;
+using RFID.SimpleTask.Domain.Entities;
+using RFID.SimpleTask.Domain.ValueObjects;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace RFID_Task.Application.IntegrationTests.TodoLists.Queries;
+namespace RFID.SimpleTask.Application.IntegrationTests.TodoLists.Queries;
 
 using static Testing;
 

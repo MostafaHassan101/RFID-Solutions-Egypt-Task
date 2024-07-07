@@ -1,11 +1,11 @@
-﻿using RFID_Task.Application.Common.Behaviours;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Application.TodoItems.Commands.CreateTodoItem;
+﻿using RFID.SimpleTask.Application.Common.Behaviours;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.TodoItems.Commands.CreateTodoItem;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
 
-namespace RFID_Task.Application.UnitTests.Common.Behaviours;
+namespace RFID.SimpleTask.Application.UnitTests.Common.Behaviours;
 
 public class RequestLoggerTests
 {

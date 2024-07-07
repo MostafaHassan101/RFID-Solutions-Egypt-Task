@@ -1,9 +1,9 @@
-﻿using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Domain.Entities;
-using RFID_Task.Domain.Events;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Domain.Entities;
+using RFID.SimpleTask.Domain.Events;
 using MediatR;
 
-namespace RFID_Task.Application.TodoItems.Commands.CreateTodoItem;
+namespace RFID.SimpleTask.Application.TodoItems.Commands.CreateTodoItem;
 
 public record CreateTodoItemCommand : IRequest<int>
 {

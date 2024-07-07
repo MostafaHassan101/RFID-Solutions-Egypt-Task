@@ -1,9 +1,9 @@
-﻿using RFID_Task.Domain.Exceptions;
-using RFID_Task.Domain.ValueObjects;
+﻿using RFID.SimpleTask.Domain.Exceptions;
+using RFID.SimpleTask.Domain.ValueObjects;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace RFID_Task.Domain.UnitTests.ValueObjects;
+namespace RFID.SimpleTask.Domain.UnitTests.ValueObjects;
 
 public class ColourTests
 {

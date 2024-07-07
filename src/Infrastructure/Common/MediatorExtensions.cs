@@ -1,4 +1,4 @@
-﻿using RFID_Task.Domain.Common;
+﻿using RFID.SimpleTask.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 
 namespace MediatR;

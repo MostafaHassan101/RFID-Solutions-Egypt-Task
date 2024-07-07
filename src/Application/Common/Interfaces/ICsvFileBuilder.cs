@@ -1,6 +1,6 @@
-﻿using RFID_Task.Application.TodoLists.Queries.ExportTodos;
+﻿using RFID.SimpleTask.Application.TodoLists.Queries.ExportTodos;
 
-namespace RFID_Task.Application.Common.Interfaces;
+namespace RFID.SimpleTask.Application.Common.Interfaces;
 
 public interface ICsvFileBuilder
 {

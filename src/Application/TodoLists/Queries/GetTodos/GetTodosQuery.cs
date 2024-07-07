@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Application.Common.Security;
-using RFID_Task.Domain.Enums;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.Common.Security;
+using RFID.SimpleTask.Domain.Enums;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace RFID_Task.Application.TodoLists.Queries.GetTodos;
+namespace RFID.SimpleTask.Application.TodoLists.Queries.GetTodos;
 
 [Authorize]
 public record GetTodosQuery : IRequest<TodosVm>;

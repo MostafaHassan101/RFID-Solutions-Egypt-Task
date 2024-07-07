@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using RFID_Task.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.Common.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace RFID_Task.Application.TodoLists.Queries.ExportTodos;
+namespace RFID.SimpleTask.Application.TodoLists.Queries.ExportTodos;
 
 public record ExportTodosQuery : IRequest<ExportTodosVm>
 {

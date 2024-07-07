@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-      <RootNamespace>RFID_Task.WebUI.AcceptanceTests</RootNamespace>
-      <AssemblyName>RFID_Task.WebUI.AcceptanceTests</AssemblyName>
+      <RootNamespace>RFID.SimpleTask.WebUI.AcceptanceTests</RootNamespace>
+      <AssemblyName>RFID.SimpleTask.WebUI.AcceptanceTests</AssemblyName>
       <Nullable>enable</Nullable>
       <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>

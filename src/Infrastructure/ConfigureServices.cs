@@ -1,13 +1,17 @@
-﻿using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Infrastructure.Files;
-using RFID_Task.Infrastructure.Identity;
-using RFID_Task.Infrastructure.Persistence;
-using RFID_Task.Infrastructure.Persistence.Interceptors;
-using RFID_Task.Infrastructure.Services;
+﻿using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Infrastructure.Files;
+using RFID.SimpleTask.Infrastructure.Identity;
+using RFID.SimpleTask.Infrastructure.Persistence;
+using RFID.SimpleTask.Infrastructure.Persistence.Interceptors;
+using RFID.SimpleTask.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using RFID.SimpleTask.Domain.Entities;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -20,7 +24,7 @@ public static class ConfigureServices
         if (configuration.GetValue<bool>("UseInMemoryDatabase"))
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseInMemoryDatabase("RFID_TaskDb"));
+                options.UseInMemoryDatabase("RFID.SimpleTaskDb"));
         }
         else
         {
@@ -41,15 +45,35 @@ public static class ConfigureServices
         services.AddIdentityServer()
             .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
-        services.AddTransient<IDateTime, DateTimeService>();
-        services.AddTransient<IIdentityService, IdentityService>();
-        services.AddTransient<ICsvFileBuilder, CsvFileBuilder>();
+        services.AddScoped<IDateTime, DateTimeService>();
+        services.AddScoped<IIdentityService, IdentityService>();
+        services.AddScoped<ICsvFileBuilder, CsvFileBuilder>();
+        services.AddScoped<IApplicationUser, ApplicationUser>();
 
-        services.AddAuthentication()
-            .AddIdentityServerJwt();
+        //services.AddAuthentication()
+        //    .AddIdentityServerJwt();
 
-        services.AddAuthorization(options =>
-            options.AddPolicy("CanPurge", policy => policy.RequireRole("Administrator")));
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = configuration["Jwt:Issuer"],
+                ValidAudience = configuration["Jwt:Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]))
+            };
+        });
+
+        //services.AddAuthorization(options =>
+        //    options.AddPolicy("CanPurge", policy => policy.RequireRole("Administrator")));
 
         return services;
     }

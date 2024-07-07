@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Domain.Entities;
+﻿namespace RFID.SimpleTask.Domain.Entities;
 
 public class TodoItem : BaseAuditableEntity
 {

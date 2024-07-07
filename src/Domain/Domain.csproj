@@ -2,14 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>RFID_Task.Domain</RootNamespace>
-        <AssemblyName>RFID_Task.Domain</AssemblyName>
+        <RootNamespace>RFID.SimpleTask.Domain</RootNamespace>
+        <AssemblyName>RFID.SimpleTask.Domain</AssemblyName>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MediatR" Version="12.0.1" />
+      <PackageReference Include="MediatR" Version="12.3.0" />
     </ItemGroup>
 
 </Project>

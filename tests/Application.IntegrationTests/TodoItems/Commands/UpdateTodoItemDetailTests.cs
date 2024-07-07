@@ -1,14 +1,14 @@
-﻿using RFID_Task.Application.Common.Exceptions;
-using RFID_Task.Application.TodoItems.Commands.CreateTodoItem;
-using RFID_Task.Application.TodoItems.Commands.UpdateTodoItem;
-using RFID_Task.Application.TodoItems.Commands.UpdateTodoItemDetail;
-using RFID_Task.Application.TodoLists.Commands.CreateTodoList;
-using RFID_Task.Domain.Entities;
-using RFID_Task.Domain.Enums;
+﻿using RFID.SimpleTask.Application.Common.Exceptions;
+using RFID.SimpleTask.Application.TodoItems.Commands.CreateTodoItem;
+using RFID.SimpleTask.Application.TodoItems.Commands.UpdateTodoItem;
+using RFID.SimpleTask.Application.TodoItems.Commands.UpdateTodoItemDetail;
+using RFID.SimpleTask.Application.TodoLists.Commands.CreateTodoList;
+using RFID.SimpleTask.Domain.Entities;
+using RFID.SimpleTask.Domain.Enums;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace RFID_Task.Application.IntegrationTests.TodoItems.Commands;
+namespace RFID.SimpleTask.Application.IntegrationTests.TodoItems.Commands;
 
 using static Testing;
 

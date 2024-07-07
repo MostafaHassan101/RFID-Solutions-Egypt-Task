@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
-using RFID_Task.Application.Common.Behaviours;
-using RFID_Task.Application.Common.Exceptions;
+using RFID.SimpleTask.Application.Common.Behaviours;
+using RFID.SimpleTask.Application.Common.Exceptions;
 using FluentValidation;
 using MediatR;
 

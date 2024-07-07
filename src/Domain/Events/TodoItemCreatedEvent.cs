@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Domain.Events;
+﻿namespace RFID.SimpleTask.Domain.Events;
 
 public class TodoItemCreatedEvent : BaseEvent
 {

@@ -1,12 +1,12 @@
 ﻿using System.Runtime.Serialization;
 using AutoMapper;
-using RFID_Task.Application.Common.Mappings;
-using RFID_Task.Application.Common.Models;
-using RFID_Task.Application.TodoLists.Queries.GetTodos;
-using RFID_Task.Domain.Entities;
+using RFID.SimpleTask.Application.Common.Mappings;
+using RFID.SimpleTask.Application.Common.Models;
+using RFID.SimpleTask.Application.TodoLists.Queries.GetTodos;
+using RFID.SimpleTask.Domain.Entities;
 using NUnit.Framework;
 
-namespace RFID_Task.Application.UnitTests.Common.Mappings;
+namespace RFID.SimpleTask.Application.UnitTests.Common.Mappings;
 
 public class MappingTests
 {

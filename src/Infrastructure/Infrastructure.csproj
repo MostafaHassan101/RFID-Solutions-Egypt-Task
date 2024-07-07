@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>RFID_Task.Infrastructure</RootNamespace>
-        <AssemblyName>RFID_Task.Infrastructure</AssemblyName>
+        <RootNamespace>RFID.SimpleTask.Infrastructure</RootNamespace>
+        <AssemblyName>RFID.SimpleTask.Infrastructure</AssemblyName>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>

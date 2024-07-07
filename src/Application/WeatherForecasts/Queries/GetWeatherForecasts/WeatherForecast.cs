@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Application.WeatherForecasts.Queries.GetWeatherForecasts;
+﻿namespace RFID.SimpleTask.Application.WeatherForecasts.Queries.GetWeatherForecasts;
 
 public class WeatherForecast
 {

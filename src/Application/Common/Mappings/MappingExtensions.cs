@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using RFID_Task.Application.Common.Models;
+using RFID.SimpleTask.Application.Common.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace RFID_Task.Application.Common.Mappings;
+namespace RFID.SimpleTask.Application.Common.Mappings;
 
 public static class MappingExtensions
 {

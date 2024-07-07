@@ -1,4 +1,4 @@
-﻿namespace RFID_Task.Domain.Exceptions;
+﻿namespace RFID.SimpleTask.Domain.Exceptions;
 
 public class UnsupportedColourException : Exception
 {

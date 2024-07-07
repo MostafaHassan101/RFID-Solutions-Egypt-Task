@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>RFID_Task.Application</RootNamespace>
-        <AssemblyName>RFID_Task.Application</AssemblyName>
+        <RootNamespace>RFID.SimpleTask.Application</RootNamespace>
+        <AssemblyName>RFID.SimpleTask.Application</AssemblyName>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
@@ -16,6 +16,10 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Orders\Queries\GetById\" />
     </ItemGroup>
 
 </Project>

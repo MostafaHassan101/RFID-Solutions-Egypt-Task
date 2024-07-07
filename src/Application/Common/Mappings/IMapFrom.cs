@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace RFID_Task.Application.Common.Mappings;
+namespace RFID.SimpleTask.Application.Common.Mappings;
 
 public interface IMapFrom<T>
 {

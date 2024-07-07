@@ -1,8 +1,8 @@
 ﻿using System.Globalization;
-using RFID_Task.Application.TodoLists.Queries.ExportTodos;
+using RFID.SimpleTask.Application.TodoLists.Queries.ExportTodos;
 using CsvHelper.Configuration;
 
-namespace RFID_Task.Infrastructure.Files.Maps;
+namespace RFID.SimpleTask.Infrastructure.Files.Maps;
 
 public class TodoItemRecordMap : ClassMap<TodoItemRecord>
 {

@@ -1,10 +1,10 @@
 ﻿using System.Globalization;
-using RFID_Task.Application.Common.Interfaces;
-using RFID_Task.Application.TodoLists.Queries.ExportTodos;
-using RFID_Task.Infrastructure.Files.Maps;
+using RFID.SimpleTask.Application.Common.Interfaces;
+using RFID.SimpleTask.Application.TodoLists.Queries.ExportTodos;
+using RFID.SimpleTask.Infrastructure.Files.Maps;
 using CsvHelper;
 
-namespace RFID_Task.Infrastructure.Files;
+namespace RFID.SimpleTask.Infrastructure.Files;
 
 public class CsvFileBuilder : ICsvFileBuilder
 {
